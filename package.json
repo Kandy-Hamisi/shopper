@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node -import=tsx --watch --env-file=.env ./src/index.ts",
-    "build": "tsc "
+    "dev": "node --import=tsx --watch --env-file=.env src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "generalfib",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0"
   },
   "devDependencies": {
